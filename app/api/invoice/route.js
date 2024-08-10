@@ -47,7 +47,10 @@ export async function GET(req) {
   console.log(userId);
 
   try {
-    const invoices = await db.invoices.findMany({ where: { userId: userId } });
+    const invoices = await db.invoices.findMany({
+      where: { userId: userId },
+      orderBy: { id: "desc" },
+    });
     // console.log(invoices);
 
     return NextResponse.json({
