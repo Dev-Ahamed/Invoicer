@@ -6,7 +6,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-const page = () => {
+const Page = () => {
   const { isSubmitted, setIsSubmitted } = useContext(InvoiceContext);
   const [invoices, setInvoices] = useState([]);
   const { data: session, status } = useSession();
@@ -135,4 +135,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

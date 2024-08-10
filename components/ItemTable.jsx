@@ -16,7 +16,7 @@ const ItemTable = (props) => {
   useEffect(() => {
     const newTotals = totalTaxAndAmount();
     setFormData((prev) => ({ ...prev, totals: newTotals }));
-  }, [formData.tableData]);
+  }, [formData.tableData, totalTaxAndAmount, setFormData]);
 
   const addRow = () => {
     setFormData((prevFormData) => ({

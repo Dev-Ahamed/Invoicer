@@ -24,7 +24,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 
-const page = () => {
+const Page = () => {
   const { data: session, status } = useSession();
   const [isPreview, setIsPreview] = useState(false);
 
@@ -465,4 +465,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

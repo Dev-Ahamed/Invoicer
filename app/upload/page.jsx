@@ -2,7 +2,7 @@
 import { CldUploadButton, CldImage } from "next-cloudinary";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [imageUrl, setImageUrl] = useState("");
 
   return (
@@ -31,4 +31,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -8,7 +8,7 @@ import { FaCloudArrowUp } from "react-icons/fa6";
 import { IoMdMail, IoMdPrint } from "react-icons/io";
 import { useReactToPrint } from "react-to-print";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [showEmail, setShowEmail] = useState(false);
   const [email, setEmail] = useState("");
   const [sending, setSending] = useState(false);
@@ -219,4 +219,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

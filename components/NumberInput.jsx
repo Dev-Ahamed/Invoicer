@@ -27,4 +27,6 @@ const NumberInput = memo(
   }
 );
 
+NumberInput.displayName = "NumberInput"; // Assigning displayName
+
 export default NumberInput;
